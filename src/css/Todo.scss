@@ -1,0 +1,94 @@
+
+.App{
+  border:0;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.todo_container{
+  background-image: linear-gradient(rgba(100,0,255,0.6),rgba(0,0,255,1.0),rgba(100,0,255,0.6));
+  height:100vh;
+  width:100vw;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .center_div{
+    height:80vh;
+    width:40vw;
+
+
+
+
+
+    .main_logo{
+      width:7vw;
+      height:7vh;
+    }
+    .to-parent{
+        margin-top: 2rem;
+        width:80%;
+        display:flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        margin-left: auto;
+        margin-right: auto;
+
+      .input-group{
+        input{
+
+
+          height:2.5rem;
+          border: 0;
+          border-bottom: 1px solid grey;
+          background: transparent;
+
+
+
+
+        }
+        .input-group-append span{
+          background:rgba(100,0,255,0.6);
+          cursor:pointer;
+        }
+      }
+      .list-group{
+        margin-top: 3rem;
+        .list-group-item{
+          background-image: linear-gradient(rgba(100,0,255,0.6),rgba(0,0,255,0.9) ,rgba(0,0,255,0.9) ,rgba(100,0,255,0.6));
+          color:white;
+          text-align:center;
+          text-transform: capitalize;
+        }
+      }
+
+
+    }
+
+
+
+  }
+  @media screen and (max-width:950px){
+    .center_div{
+      width:90%;
+
+      .to-parent{
+        width:90%;
+      }
+
+    }
+  }
+  @media screen and (max-width:750px){
+    .center_div{
+      width:90%;
+
+      .to-parent{
+        width:90%;
+
+      }
+
+    }
+  }
+}
